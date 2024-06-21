@@ -1,5 +1,6 @@
 import { Transition } from '@headlessui/react'
 import React from 'react'
+import lamparas from '../image/lamparas.jpg';
 
 function Tecnologias({seccionAnimacion}) {
   return (
@@ -13,7 +14,12 @@ function Tecnologias({seccionAnimacion}) {
             leaveFrom="opacity-100 transform translate-x-0"
             leaveTo="opacity-0 transform translate-x-full"
         >
-            <div id="Tecnologias" className="h-screen flex flex-col items-center justify-center bg-gradient-to-b from-indigo-800 to-purple-800 text-white">
+            <div id="Tecnologias" className="h-screen flex flex-col items-center justify-center bg-gradient-to-b from-indigo-800 to-purple-800 text-white"
+            style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${lamparas})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}>
                 <h2 className="text-4xl font-bold">Tecnologías</h2>
                 <p className="mt-2">Scroll Down for next slide</p>
             </div>
