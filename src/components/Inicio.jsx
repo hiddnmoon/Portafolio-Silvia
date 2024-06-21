@@ -2,8 +2,19 @@ import React from 'react';
 import { Transition } from '@headlessui/react';
 import street from '../image/street.jpg';
 import yo from '../image/yo.jpg';
+import gitHub from '../image/gitHub.png';
+import linkedin from '../image/linkedin.png';
+import instagram from '../image/instagram.png';
 
-function Inicio({ seccionAnimacion }) {
+function Inicio({seccionAnimacion, navegacion}) {
+
+  const descargarCV = () => {
+    const link = document.createElement('a');
+    link.href = process.env.PUBLIC_URL + '/CV-CarmeloRodriguez.pdf';
+    link.download = 'CV-CarmeloRodriguez.pdf';
+    link.click();
+  };
+
   return (
     <>
       <Transition
@@ -38,6 +49,22 @@ function Inicio({ seccionAnimacion }) {
                 y eficientes. Nacido en Huelva, España, mi objetivo es aprovechar mi creatividad innata para desarrollar soluciones
                 web innovadoras y de alta calidad.
               </p>
+              <div className='flex'>
+                <a href="https://github.com/crodros2601" target="_blank"><img src={gitHub} className='w-16' alt="Icono de GitHub" /></a>
+                <div>
+                  <a href="https://www.linkedin.com/in/carmelorodriguezrosalina/" target="_blank"><img src={linkedin} className='w-12 mt-3 mr-4' alt="Icono de Linkedin" /></a>
+                </div>
+                <div>
+                  <a href="https://www.instagram.com/karmelartem" target="_blank"><img src={instagram} className='w-9 mt-7 mr-5' alt="Icono de Instagram" /></a>
+                </div>
+                <div>
+                  <button className='w-24 p-1 mt-8 bg-white rounded-full font-extrabold' onClick={descargarCV}>CV</button>
+                </div>
+                <div>
+                  <button onClick={()=>navegacion("Contacto")} className='w-32 font-extrabold p-1 mt-8 ml-5 bg-white rounded-full'>CONTACTO</button>
+                </div>
+              </div>
+              
             </div>
             <div className='flex-none md:w-1/4 flex items-center justify-center p-4'>
               <img src={yo} className='rounded-full w-60 h-60 object-cover hover:scale-110' alt="Imagen de Carmelo Rodríguez" />
