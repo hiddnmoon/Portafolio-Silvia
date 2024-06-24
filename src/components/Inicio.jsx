@@ -48,7 +48,7 @@ function Inicio({ seccionAnimacion, navegacion }) {
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${street})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            minHeight: isMobile ? '200vh' : '100vh',
+            minHeight: isMobile ? '150vh' : '100vh',
           }}
         >
           {isMobile && (
@@ -80,7 +80,7 @@ function Inicio({ seccionAnimacion, navegacion }) {
                   <a href="https://www.instagram.com/karmelartem" target="_blank"><img src={instagram} className={`${isMobile ? 'w-8 h-8 mt-6 mr-4' : 'w-9 mt-7'}`} alt="Icono de Instagram" /></a>
                 </div>
                <div>
-                  <button className={`${isMobile ? 'w-14 font-extrabold p-1 mt-6 ml-0 bg-white rounded-full mr-4' : 'w-24 p-1 mt-8 bg-white rounded-full font-extrabold'}`} onClick={descargarCV}>CV</button>
+                  <button className={`${isMobile ? 'w-14 font-extrabold p-1 mt-6 ml-0 bg-white rounded-full mr-4' : 'w-24 p-1 ml-6 mt-8 bg-white rounded-full font-extrabold'}`} onClick={descargarCV}>CV</button>
                 </div>
                 <div>
                   <button onClick={()=>navegacion("Contacto")} className={`${isMobile ? 'w-24 font-extrabold p-1 mt-6 ml-0 bg-white rounded-full mr-4' : 'w-32 font-extrabold p-1 mt-8 ml-5 bg-white rounded-full'}`}>CONTACTO</button>
