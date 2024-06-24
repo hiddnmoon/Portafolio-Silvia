@@ -48,7 +48,7 @@ function Inicio({ seccionAnimacion, navegacion }) {
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${street})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            minHeight: '160vh',
+            minHeight: '140vh',
           }}
         >
           <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'} items-center`}>
