@@ -51,71 +51,72 @@ function Tecnologias({ seccionAnimacion }) {
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${lamparas})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            minHeight: '110vh'
+            minHeight: '100vh', // Ajusta la altura mínima al 100% del viewport
+            paddingTop: isMobile ? '6rem' : '0', // Ajusta el relleno superior en dispositivos móviles
           }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl w-full px-8">
-            <div className={`flex flex-col items-center p-6 md:p-0 lg:mr-20 ${isMobile ? 'mt-10' : ''}`}>
-              <h3 className="text-2xl font-bold mb-4">FRONTEND</h3>
+            <div className={`flex flex-col items-center p-6 md:p-0 lg:mr-20 ${isMobile ? 'mt-8' : ''}`}>
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">FRONTEND</h3>
               <div className="flex space-x-4">
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={html} alt="HTML Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={css} alt="CSS Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={javascript} alt="JavaScript Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={react} alt="React Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={Tailwind} alt="Tailwind Logo" className="w-full h-full object-contain p-2" />
                 </div>
               </div>
             </div>
-            <div className={`flex flex-col items-center p-6 md:p-0 lg:ml-20`}>
-              <h3 className="text-2xl font-bold mb-4">BACKEND</h3>
+            <div className={`flex flex-col items-center p-6 md:p-0 lg:ml-20 ${isMobile ? 'mt-8' : ''}`}>
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">BACKEND</h3>
               <div className="flex space-x-4">
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={laravel} alt="Laravel Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={java} alt="Java Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={mysql} alt="MySQL Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={PHP} alt="PHP Logo" className="w-full h-full object-contain p-2" />
                 </div>
               </div>
             </div>
-            <div className={`flex flex-col items-center p-6 md:p-0 lg:mr-20`}>
-              <h3 className="text-2xl font-bold mb-4">HERRAMIENTAS</h3>
+            <div className={`flex flex-col items-center p-6 md:p-0 lg:mr-20 ${isMobile ? 'mt-8' : ''}`}>
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">HERRAMIENTAS</h3>
               <div className="flex space-x-4">
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={git} alt="Git Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={visualStudio} alt="Visual Studio Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={eclipse} alt="Eclipse Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={docker} alt="Docker Logo" className="w-full h-full object-contain p-2" />
                 </div>
               </div>
             </div>
-            <div className={`flex flex-col items-center p-6 md:p-0 lg:ml-20`}>
-              <h3 className="text-2xl font-bold mb-4">APRENDIENDO</h3>
+            <div className={`flex flex-col items-center p-6 md:p-0 lg:ml-20 ${isMobile ? 'mt-8' : ''}`}>
+              <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">APRENDIENDO</h3>
               <div className="flex space-x-4">
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={nodejs} alt="Node.js Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                <div className="w-24 h-24">
+                <div className="w-20 md:w-24 h-20 md:h-24">
                   <img src={figma} alt="Figma Logo" className="w-full h-full object-contain p-2" />
                 </div>
               </div>
