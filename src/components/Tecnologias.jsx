@@ -55,9 +55,9 @@ function Tecnologias({ seccionAnimacion }) {
           }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full px-8">
-            <div className={`flex flex-col items-center p-6 md:p-0 ${isMobile ? 'mt-10' : ''}`}>
+            <div className={`flex flex-col items-center p-2 md:p-0`}>
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-4">FRONTEND</h3>
-              <div className="flex flex-wrap justify-center space-x-4 md:justify-start">
+              <div className="flex flex-wrap justify-center space-x-2 md:space-x-4 md:justify-start">
                 <div className="w-20 h-20 md:w-24 md:h-24">
                   <img src={html} alt="HTML Logo" className="w-full h-full object-contain p-2" />
                 </div>
@@ -75,9 +75,9 @@ function Tecnologias({ seccionAnimacion }) {
                 </div>
               </div>
             </div>
-            <div className={`flex flex-col items-center p-6 md:p-0 ${isMobile ? 'mt-0' : ''}`}>
+            <div className={`flex flex-col items-center p-2 md:p-0`}>
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-4">BACKEND</h3>
-              <div className="flex flex-wrap justify-center space-x-4 md:justify-start">
+              <div className="flex flex-wrap justify-center space-x-2 md:space-x-4 md:justify-start">
                 <div className="w-20 h-20 md:w-24 md:h-24">
                   <img src={laravel} alt="Laravel Logo" className="w-full h-full object-contain p-2" />
                 </div>
@@ -92,9 +92,9 @@ function Tecnologias({ seccionAnimacion }) {
                 </div>
               </div>
             </div>
-            <div className={`flex flex-col items-center p-6 md:p-0 ${isMobile ? 'mt-0' : ''}`}>
+            <div className={`flex flex-col items-center p-2 md:p-0`}>
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-4">HERRAMIENTAS</h3>
-              <div className="flex flex-wrap justify-center space-x-4 md:justify-start">
+              <div className="flex flex-wrap justify-center space-x-2 md:space-x-4 md:justify-start">
                 <div className="w-20 h-20 md:w-24 md:h-24">
                   <img src={git} alt="Git Logo" className="w-full h-full object-contain p-2" />
                 </div>
@@ -109,9 +109,9 @@ function Tecnologias({ seccionAnimacion }) {
                 </div>
               </div>
             </div>
-            <div className={`flex flex-col items-center p-6 md:p-0 ${isMobile ? 'mt-0' : ''}`}>
+            <div className={`flex flex-col items-center p-2 md:p-0`}>
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-4">APRENDIENDO</h3>
-              <div className="flex flex-wrap justify-center space-x-4 md:justify-start">
+              <div className="flex flex-wrap justify-center space-x-2 md:space-x-4 md:justify-start">
                 <div className="w-20 h-20 md:w-24 md:h-24">
                   <img src={nodejs} alt="Node.js Logo" className="w-full h-full object-contain p-2" />
                 </div>
