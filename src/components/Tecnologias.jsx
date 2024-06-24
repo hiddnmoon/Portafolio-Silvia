@@ -20,7 +20,6 @@ import nodejs from '../image/nodejs.png';
 function Tecnologias({ seccionAnimacion }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  // Manejar el cambio de tamaño de la ventana
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
