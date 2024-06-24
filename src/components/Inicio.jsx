@@ -48,7 +48,7 @@ function Inicio({ seccionAnimacion, navegacion }) {
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${street})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            minHeight: isMobile ? '150vh' : '100vh',
+            minHeight: isMobile ? '130vh' : '100vh',
           }}
         >
           {isMobile && (
@@ -58,10 +58,12 @@ function Inicio({ seccionAnimacion, navegacion }) {
           )}
           <div className='flex flex-col md:flex-row '>
             <div className='flex-grow md:w-3/4 flex flex-col justify-center p-4'>
-              <h2 className="text-4xl font-base text-white">
-                ¡Hola, soy <span className='font-extrabold text-white'>Carmelo Rodríguez</span>!
-              </h2>
-              <h2 className='text-3xl font-bold text-white mt-2'>Frontend Developer</h2>
+            <h2 className={`text-4xl font-base text-white ${isMobile ? 'text-center' : ''}`}>
+              ¡Hola, soy <span className='font-extrabold text-white'>Carmelo Rodríguez</span>!
+            </h2>
+            <h2 className={`text-3xl font-bold text-white mt-2 ${isMobile ? 'text-center' : ''}`}>
+              Frontend Developer
+            </h2>
               <p className='text-white mt-3 text-justify max-w-3xl'>
                 Desde temprana edad, descubrí mi pasión por el arte y la creatividad. Esta inclinación artística me ha
                 acompañado a lo largo de los años y la he canalizado hacia el diseño web, fusionando estética y funcionalidad
