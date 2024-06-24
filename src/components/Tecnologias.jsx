@@ -23,11 +23,11 @@ function Tecnologias({ seccionAnimacion }) {
       <Transition
         show={seccionAnimacion === 'Tecnologias'}
         enter="transition ease-out duration-500"
-        enterFrom="opacity-0 transform translate-x-full"
-        enterTo="opacity-100 transform translate-x-0"
+        enterFrom="opacity-0 transform -translate-y-full"
+        enterTo="opacity-100 transform translate-y-0"
         leave="transition ease-in duration-300"
-        leaveFrom="opacity-100 transform translate-x-0"
-        leaveTo="opacity-0 transform translate-x-full"
+        leaveFrom="opacity-100 transform translate-y-0"
+        leaveTo="opacity-0 transform -translate-y-full"
       >
         <div
           id="Tecnologias"
@@ -39,7 +39,7 @@ function Tecnologias({ seccionAnimacion }) {
           }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl w-full px-8">
-            <div className="flex flex-col items-center p-6 mr-20">
+            <div className="flex flex-col items-center p-6 md:p-0 lg:mr-20">
               <h3 className="text-2xl font-bold mb-4">FRONTEND</h3>
               <div className="flex space-x-4">
                 <div className="w-24 h-24">
@@ -54,54 +54,53 @@ function Tecnologias({ seccionAnimacion }) {
                 <div className="w-24 h-24">
                   <img src={react} alt="React Logo" className="w-full h-full object-contain p-2" />
                 </div>
-                
                 <div className="w-24 h-24">
                   <img src={Tailwind} alt="Tailwind Logo" className="w-full h-full object-contain p-2" />
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center p-6 rounded-lg ml-20">
+            <div className="flex flex-col items-center p-6 md:p-0 lg:ml-20">
               <h3 className="text-2xl font-bold mb-4">BACKEND</h3>
               <div className="flex space-x-4">
                 <div className="w-24 h-24">
-                  <img src={laravel} alt="laravel Logo" className="w-full h-full object-contain p-2" />
+                  <img src={laravel} alt="Laravel Logo" className="w-full h-full object-contain p-2" />
                 </div>
                 <div className="w-24 h-24">
-                  <img src={java} alt="java Logo" className="w-full h-full object-contain p-2" />
+                  <img src={java} alt="Java Logo" className="w-full h-full object-contain p-2" />
                 </div>
                 <div className="w-24 h-24">
-                  <img src={mysql} alt="mysql Logo" className="w-full h-full object-contain p-2" />
+                  <img src={mysql} alt="MySQL Logo" className="w-full h-full object-contain p-2" />
                 </div>
                 <div className="w-24 h-24">
                   <img src={PHP} alt="PHP Logo" className="w-full h-full object-contain p-2" />
-                </div>  
+                </div>
               </div>
             </div>
-            <div className="flex flex-col items-center p-6 rounded-lg mr-20">
+            <div className="flex flex-col items-center p-6 md:p-0 lg:mr-20">
               <h3 className="text-2xl font-bold mb-4">HERRAMIENTAS</h3>
-                <div className="flex space-x-4">
-                  <div className="w-24 h-24">
-                    <img src={git} alt="git Logo" className="w-full h-full object-contain p-2" />
-                  </div>
-                  <div className="w-24 h-24">
-                    <img src={visualStudio} alt="visualStudio Logo" className="w-full h-full object-contain p-2" />
-                  </div>
-                  <div className="w-24 h-24">
-                    <img src={eclipse} alt="eclipse Logo" className="w-full h-full object-contain p-2" />
-                  </div>
-                  <div className="w-24 h-24">
-                    <img src={docker} alt="docker Logo" className="w-full h-full object-contain p-2" />
-                  </div>
+              <div className="flex space-x-4">
+                <div className="w-24 h-24">
+                  <img src={git} alt="Git Logo" className="w-full h-full object-contain p-2" />
                 </div>
+                <div className="w-24 h-24">
+                  <img src={visualStudio} alt="Visual Studio Logo" className="w-full h-full object-contain p-2" />
+                </div>
+                <div className="w-24 h-24">
+                  <img src={eclipse} alt="Eclipse Logo" className="w-full h-full object-contain p-2" />
+                </div>
+                <div className="w-24 h-24">
+                  <img src={docker} alt="Docker Logo" className="w-full h-full object-contain p-2" />
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col items-center p-6 rounded-lg ml-20">
+            <div className="flex flex-col items-center p-6 md:p-0 lg:ml-20">
               <h3 className="text-2xl font-bold mb-4">APRENDIENDO</h3>
               <div className="flex space-x-4">
                 <div className="w-24 h-24">
-                  <img src={nodejs} alt="nodejs Logo" className="w-full h-full object-contain p-2" />
+                  <img src={nodejs} alt="Node.js Logo" className="w-full h-full object-contain p-2" />
                 </div>
                 <div className="w-24 h-24">
-                  <img src={figma} alt="figma Logo" className="w-full h-full object-contain p-2" />
+                  <img src={figma} alt="Figma Logo" className="w-full h-full object-contain p-2" />
                 </div>
               </div>
             </div>

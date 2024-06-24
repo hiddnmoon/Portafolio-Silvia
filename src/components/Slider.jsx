@@ -66,33 +66,33 @@ import Contacto from './Contacto';
               leaveTo="opacity-0"
             >
             <nav className="fixed top-0 left-0 right-0 flex justify-center items-center py-4 z-50">
-            <div className="ml-96 mr-96 flex justify-center items-center rounded-full shadow-md bg-white">
-              <button
-                onClick={() => navegacion('Inicio')}
-                className={`py-5 pr-10 pl-10 px-6 focus:outline-none rounded-full transition duration-300 ease-in-out ${seccionAnimacion === 'Inicio' ? 'text-black font-bold' : 'text-gray-400 font-bold'}`}
-              >
-                INICIO
-              </button>
-              <button
-                onClick={() => navegacion('Tecnologias')}
-                className={`py-5 px-6 pr-10 pl-10 focus:outline-none rounded-full ml-4 transition duration-300 ease-in-out ${seccionAnimacion === 'Tecnologias' ? 'text-black font-bold' : 'text-gray-400 font-bold'}`}
-              >
-                TECNOLOGÍAS
-              </button>
-              <button
-                onClick={() => navegacion('ExperienciayFormacion')}
-                className={`py-5 px-4 pr-10 pl-10 focus:outline-none rounded-full ml-4 transition duration-300 ease-in-out ${seccionAnimacion === 'ExperienciayFormacion' ? 'text-black font-bold' : 'text-gray-400 font-bold'}`}
-              >
-                EXPERIENCIA Y FORMACIÓN
-              </button>
-              <button
-                onClick={() => navegacion('Proyectos')}
-                className={`py-5 pl-10 px-10 pr-10 focus:outline-none rounded-full ml-4 transition duration-300 ease-in-out ${seccionAnimacion === 'Proyectos' ? 'text-black font-bold' : 'text-gray-400 font-bold'}`}
-              >
-                PROYECTOS
-              </button>
-            </div>
-          </nav>
+              <div className="md:ml-96 md:mr-96 flex justify-center items-center rounded-full shadow-md bg-white">
+                <button
+                  onClick={() => navegacion('Inicio')}
+                  className={`py-4 px-6 md:py-5 md:pr-10 md:pl-10 focus:outline-none rounded-full transition duration-300 ease-in-out ${seccionAnimacion === 'Inicio' ? 'text-black font-bold' : 'text-gray-400 font-bold'}`}
+                >
+                  INICIO
+                </button>
+                <button
+                  onClick={() => navegacion('Tecnologias')}
+                  className={`py-4 px-6 md:py-5 md:px-6 md:pr-10 md:pl-10 focus:outline-none rounded-full ml-4 md:ml-4 transition duration-300 ease-in-out ${seccionAnimacion === 'Tecnologias' ? 'text-black font-bold' : 'text-gray-400 font-bold'}`}
+                >
+                  TECNOLOGÍAS
+                </button>
+                <button
+                  onClick={() => navegacion('ExperienciayFormacion')}
+                  className={`py-4 px-4 md:py-5 md:px-4 md:pr-10 md:pl-10 focus:outline-none rounded-full ml-4 md:ml-4 transition duration-300 ease-in-out ${seccionAnimacion === 'ExperienciayFormacion' ? 'text-black font-bold' : 'text-gray-400 font-bold'}`}
+                >
+                  EXPERIENCIA Y FORMACIÓN
+                </button>
+                <button
+                  onClick={() => navegacion('Proyectos')}
+                  className={`py-4 px-6 md:py-5 md:pl-10 md:px-10 md:pr-10 focus:outline-none rounded-full ml-4 md:ml-4 transition duration-300 ease-in-out ${seccionAnimacion === 'Proyectos' ? 'text-black font-bold' : 'text-gray-400 font-bold'}`}
+                >
+                  PROYECTOS
+                </button>
+              </div>
+            </nav>
 
             </Transition>
               

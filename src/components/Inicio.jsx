@@ -49,8 +49,8 @@ function Inicio({seccionAnimacion, navegacion}) {
                 y eficientes. Nacido en Huelva, España, mi objetivo es aprovechar mi creatividad innata para desarrollar soluciones
                 web innovadoras y de alta calidad.
               </p>
-              <div className='flex'>
-                <a href="https://github.com/crodros2601" target="_blank"><img src={gitHub} className='w-16' alt="Icono de GitHub" /></a>
+              <div className='flex justify-center md:justify-start'>
+              <a href="https://github.com/crodros2601" target="_blank"><img src={gitHub} className='w-16' alt="Icono de GitHub" /></a>
                 <div>
                   <a href="https://www.linkedin.com/in/carmelorodriguezrosalina/" target="_blank"><img src={linkedin} className='w-12 mt-3 mr-4' alt="Icono de Linkedin" /></a>
                 </div>

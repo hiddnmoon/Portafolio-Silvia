@@ -43,11 +43,12 @@ function EfectoEscritura() {
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
     >
-      <h2 className="text-5xl font-normal text-white">
-        <span className='font-times font-extrabold p-2 border-4 border-white'>
+      <h2 className="text-3xl md:text-5xl font-normal text-white text-center">
+        <span className="font-times font-extrabold p-2 border-4 border-white inline-block">
           {escribir}
         </span>
       </h2>
+
     </Transition>
   );
 }
