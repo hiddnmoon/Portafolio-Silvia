@@ -71,21 +71,21 @@ function Inicio({ seccionAnimacion, navegacion }) {
                 web innovadoras y de alta calidad.
               </p>
               <div className='flex justify-center md:justify-start'>
-              <a href="https://github.com/crodros2601" target="_blank"><img src={gitHub} className='w-16' alt="Icono de GitHub" /></a>
+              <a href="https://github.com/crodros2601" target="_blank"><img src={gitHub} className={`${isMobile ? 'w-14' : 'w-16'}`} alt="Icono de GitHub" />
+              </a>
                 <div>
-                  <a href="https://www.linkedin.com/in/carmelorodriguezrosalina/" target="_blank"><img src={linkedin} className='w-12 mt-3 mr-4' alt="Icono de Linkedin" /></a>
+                  <a href="https://www.linkedin.com/in/carmelorodriguezrosalina/" target="_blank"><img src={linkedin} className={`${isMobile ? 'w-12 h-16 mt-2 mr-4' : 'w-12 mt-3 mr-4'}`} alt="Icono de Linkedin" /></a>
                 </div>
                 <div>
-                  <a href="https://www.instagram.com/karmelartem" target="_blank"><img src={instagram} className='w-9 mt-7 mr-5' alt="Icono de Instagram" /></a>
+                  <a href="https://www.instagram.com/karmelartem" target="_blank"><img src={instagram} className={`${isMobile ? 'w-8 h-8 mt-6 mr-4' : 'w-9 mt-7'}`} alt="Icono de Instagram" /></a>
+                </div>
+               <div>
+                  <button className={`${isMobile ? 'w-14 font-extrabold p-1 mt-6 ml-0 bg-white rounded-full mr-4' : 'w-24 p-1 mt-8 bg-white rounded-full font-extrabold'}`} onClick={descargarCV}>CV</button>
                 </div>
                 <div>
-                  <button className='w-24 p-1 mt-8 bg-white rounded-full font-extrabold' onClick={descargarCV}>CV</button>
-                </div>
-                <div>
-                  <button onClick={()=>navegacion("Contacto")} className='w-32 font-extrabold p-1 mt-8 ml-5 bg-white rounded-full'>CONTACTO</button>
+                  <button onClick={()=>navegacion("Contacto")} className={`${isMobile ? 'w-24 font-extrabold p-1 mt-6 ml-0 bg-white rounded-full mr-4' : 'w-32 font-extrabold p-1 mt-8 ml-5 bg-white rounded-full'}`}>CONTACTO</button>
                 </div>
               </div>
-              
             </div>
             {!isMobile && (
               <div className='flex-none md:w-1/4 flex items-center justify-center p-4'>
