@@ -48,11 +48,12 @@ function Inicio({ seccionAnimacion, navegacion }) {
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${street})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+            minHeight: '160vh',
           }}
         >
           <div className={`flex ${isMobile ? 'flex-col' : 'flex-row'} items-center`}>
             {isMobile && (
-              <div className="w-full flex items-center justify-center p-4 mb-8 mt-96">
+              <div className="w-full flex items-center justify-center p-4 mb-8">
                 <img src={yo} className='rounded-full w-60 h-60 object-cover hover:scale-110' alt="Imagen de Carmelo Rodríguez" />
               </div>
             )}
