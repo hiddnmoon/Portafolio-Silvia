@@ -55,7 +55,7 @@ function Tecnologias({ seccionAnimacion }) {
           }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl w-full px-8">
-            <div className={`flex flex-col items-center p-2 md:p-0 ${isMobile ? 'mt-10' : ''}`}>
+            <div className={`flex flex-col items-center p-2 md:p-0 ${isMobile ? 'mt-12' : ''}`}>
               <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-4">FRONTEND</h3>
               <div className="flex flex-wrap justify-center space-x-2 md:space-x-4 md:justify-start">
                 <div className="w-20 h-20 md:w-24 md:h-24">
