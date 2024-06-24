@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Transition } from '@headlessui/react';
 import lamparas from '../image/lamparas.jpg';
 import javascript from '../image/javascript.png';
@@ -18,6 +18,21 @@ import figma from '../image/figma.png';
 import nodejs from '../image/nodejs.png';
 
 function Tecnologias({ seccionAnimacion }) {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  // Manejar el cambio de tamaño de la ventana
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <Transition
@@ -36,10 +51,11 @@ function Tecnologias({ seccionAnimacion }) {
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${lamparas})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+            minHeight: '110vh'
           }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl w-full px-8">
-            <div className="flex flex-col items-center p-6 md:p-0 lg:mr-20">
+            <div className={`flex flex-col items-center p-6 md:p-0 lg:mr-20 ${isMobile ? 'mt-10' : ''}`}>
               <h3 className="text-2xl font-bold mb-4">FRONTEND</h3>
               <div className="flex space-x-4">
                 <div className="w-24 h-24">
@@ -59,7 +75,7 @@ function Tecnologias({ seccionAnimacion }) {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center p-6 md:p-0 lg:ml-20">
+            <div className={`flex flex-col items-center p-6 md:p-0 lg:ml-20`}>
               <h3 className="text-2xl font-bold mb-4">BACKEND</h3>
               <div className="flex space-x-4">
                 <div className="w-24 h-24">
@@ -76,7 +92,7 @@ function Tecnologias({ seccionAnimacion }) {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center p-6 md:p-0 lg:mr-20">
+            <div className={`flex flex-col items-center p-6 md:p-0 lg:mr-20`}>
               <h3 className="text-2xl font-bold mb-4">HERRAMIENTAS</h3>
               <div className="flex space-x-4">
                 <div className="w-24 h-24">
@@ -93,7 +109,7 @@ function Tecnologias({ seccionAnimacion }) {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center p-6 md:p-0 lg:ml-20">
+            <div className={`flex flex-col items-center p-6 md:p-0 lg:ml-20`}>
               <h3 className="text-2xl font-bold mb-4">APRENDIENDO</h3>
               <div className="flex space-x-4">
                 <div className="w-24 h-24">
