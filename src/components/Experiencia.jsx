@@ -25,7 +25,7 @@ function Experiencia({ seccionAnimacion }) {
           }}
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl w-full px-8">
-            <div className="flex flex-col items-center col-span-3 h-full"> {/* Ensure div takes full height */}
+            <div className="flex flex-col items-center col-span-3 h-full">
               <div className="flex items-center space-x-2 mb-4">
                 <FaBriefcase className="text-3xl" />
                 <h3 className="text-2xl font-bold">Experiencia Profesional</h3>
@@ -54,7 +54,7 @@ function Experiencia({ seccionAnimacion }) {
                   <p className="italic mt-2">IES San Sebastián, Huelva / 2024</p>
                 </div>
 
-                <div className="border-2 border-white bg-opacity-10 rounded-lg p-4 mt-4 sm:mt-0 text-center">
+                <div className="border-2 border-white bg-opacity-10 rounded-lg p-4 sm:mt-0 text-center">
                   <h4 className="text-xl font-semibold">Bachillerato de Arte</h4>
                   <p className="italic mt-2">Escuela de Arte León Ortega, Huelva / 2020</p>
                 </div>
