@@ -1,27 +1,23 @@
 import React, { useEffect, useState } from 'react';
-import lamparas2 from '../image/lamparas2.jpg';
-import reactIcon from '../image/react.png';
-import laravel from '../image/laravel.png';
-import docker from '../image/docker.png';
-import tailwind from '../image/Tailwind.png'; 
+import sunset4 from '../image/sunset4.jpg';
 import { Transition } from '@headlessui/react';
 import ensembleElegance from '../image/ensembleelegance.png';
 import inicio from '../image/inicio.png';
+import simbolo from '../image/simbolo.webp';
+import siya from '../image/siya.webp';
 
 const proyectos = [
   {
     id: 1,
-    imagen: ensembleElegance,
-    nombre: 'Tienda de ropa / EnsembleElegance',
-    descripcion: 'Plataforma de comercio electrónico especializada en moda y accesorios.',
-    tecnologias: ['React', 'Laravel', 'Docker', 'Tailwind'],
+    imagen: simbolo,
+    nombre: 'Símbolo',
+    descripcion: 'Cortometraje ganador de mejor BSO en certamen Castilblanco de los Arroyos.',
   },
   {
     id: 2,
-    imagen: inicio,
-    nombre: 'Portafolio',
-    descripcion: 'Portafolio personal para mostrar proyectos y habilidades.',
-    tecnologias: ['React', 'Tailwind'],
+    imagen: siya,
+    nombre: 'Si ya',
+    descripcion: 'Videoclip musical como parte de mi trabajo de fin de grado.',
   },
 ];
 
@@ -39,21 +35,6 @@ const Proyectos = ({ seccionAnimacion, navegacion }) => {
   } else if (currentProjects.length === 2) {
     gridColumns = 'md:grid-cols-2';
   }
-
-  const getIcon = (tecnologia) => {
-    switch (tecnologia.toLowerCase()) {
-      case 'react':
-        return reactIcon;
-      case 'laravel':
-        return laravel;
-      case 'docker':
-        return docker;
-      case 'tailwind':
-        return tailwind;
-      default:
-        return null;
-    }
-  };
 
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
@@ -85,7 +66,7 @@ const Proyectos = ({ seccionAnimacion, navegacion }) => {
         id="Proyectos"
         className="h-screen w-full flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-white"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${lamparas2})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${sunset4})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: isMobile ? '150vh' : '100vh'
@@ -105,7 +86,7 @@ const Proyectos = ({ seccionAnimacion, navegacion }) => {
                 {index === 0 && (
                   <button
                     onClick={() => navegacion('Proyecto1')}
-                    className="bg-black text-white px-4 py-2 rounded-md mt-3 sm:mt-0"
+                    className="bg-black text-white px-4 py-2 rounded-md mt-3 sm:mt-0 mx-auto"
                   >
                     Ver más detalles
                   </button>
@@ -113,27 +94,11 @@ const Proyectos = ({ seccionAnimacion, navegacion }) => {
                 {index === 1 && (
                   <button
                     onClick={() => navegacion('Proyecto2')}
-                    className="bg-black text-white px-4 py-2 rounded-md mt-3 sm:mt-0"
+                    className="bg-black text-white px-4 py-2 rounded-md mt-3 sm:mt-0 mx-auto"
                   >
                     Ver más detalles
                   </button>
                 )}
-                <div className="flex flex-wrap gap-2 justify-center sm:justify-end mt-3 sm:mt-1">
-                  {proyecto.tecnologias.map((tecnologia, index) => (
-                    <span
-                      key={index}
-                      className="flex items-center px-2 py-1 bg-black text-white rounded-md text-xs sm:text-sm"
-                      style={{ fontSize: '0.9rem' }}
-                    >
-                      {getIcon(tecnologia) && (
-                        <div className="w-6 h-6 sm:w-6 sm:h-6 mr-2 flex items-center justify-center overflow-hidden">
-                          <img src={getIcon(tecnologia)} alt={tecnologia} className="object-contain w-full h-full" />
-                        </div>
-                      )}
-                      {tecnologia}
-                    </span>
-                  ))}
-                </div>
               </div>
             </div>
           ))}

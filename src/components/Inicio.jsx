@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Transition } from '@headlessui/react';
-import street from '../image/street.jpg';
-import yo from '../image/yo.jpg';
+import sunset from '../image/sunset.jpg';
+import yo from '../image/yo.webp';
 import gitHub from '../image/gitHub.png';
 import linkedin from '../image/linkedin.png';
 import instagram from '../image/instagram.png';
@@ -9,7 +9,6 @@ import instagram from '../image/instagram.png';
 function Inicio({ seccionAnimacion, navegacion }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  // Función para descargar el CV
   const descargarCV = () => {
     const link = document.createElement('a');
     link.href = process.env.PUBLIC_URL + '/CV-CarmeloRodriguez.pdf';
@@ -17,7 +16,6 @@ function Inicio({ seccionAnimacion, navegacion }) {
     link.click();
   };
 
-  // Manejar el cambio de tamaño de la ventana
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -45,7 +43,7 @@ function Inicio({ seccionAnimacion, navegacion }) {
           id="Inicio"
           className="h-screen flex flex-col items-center justify-center"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${street})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${sunset})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             minHeight: isMobile ? '130vh' : '100vh',
@@ -61,7 +59,7 @@ function Inicio({ seccionAnimacion, navegacion }) {
             <h2 className={`text-4xl font-base text-white ${isMobile ? 'text-center' : ''}`}>
               ¡Hola, soy <span className='font-extrabold text-white'>Silvia Garrido</span>!
             </h2>
-            <h2 className={`text-4xl font-bold text-white mt-2 ${isMobile ? 'text-center' : ''}`}>
+            <h2 className={`text-2xl font-bold text-white mt-2 ${isMobile ? 'text-center' : ''}`}>
             Técnico de relación de Proyectos Audiovisuales 
             y Espectáculos
             </h2>
@@ -74,16 +72,8 @@ function Inicio({ seccionAnimacion, navegacion }) {
                 sin importar el campo específico.
               </p>
               <div className='flex justify-center md:justify-start'>
-              <a href="https://github.com/crodros2601" target="_blank"><img src={gitHub} className={`${isMobile ? 'w-14' : 'w-16'}`} alt="Icono de GitHub" />
-              </a>
                 <div>
-                  <a href="https://www.linkedin.com/in/carmelorodriguezrosalina/" target="_blank"><img src={linkedin} className={`${isMobile ? 'w-12 h-16 mt-2 mr-4' : 'w-12 mt-3 mr-4'}`} alt="Icono de Linkedin" /></a>
-                </div>
-                <div>
-                  <a href="https://www.instagram.com/karmelartem" target="_blank"><img src={instagram} className={`${isMobile ? 'w-8 h-8 mt-6 mr-4' : 'w-9 mt-7'}`} alt="Icono de Instagram" /></a>
-                </div>
-                <div>
-                  <button className={`${isMobile ? 'w-14 font-extrabold p-1 mt-6 ml-0 bg-white rounded-full mr-4' : 'w-24 p-1 ml-6 mt-8 bg-white rounded-full font-extrabold'}`} onClick={descargarCV}>CV</button>
+                  <button className={`${isMobile ? 'w-14 font-extrabold p-1 mt-6 ml-0 bg-white rounded-full mr-4' : 'w-24 p-1 mt-8 bg-white rounded-full font-extrabold'}`} onClick={descargarCV}>CV</button>
                 </div>
                 <div>
                   <button onClick={()=>navegacion("Contacto")} className={`${isMobile ? 'w-24 font-extrabold p-1 mt-6 ml-0 bg-white rounded-full mr-4' : 'w-32 font-extrabold p-1 mt-8 ml-5 bg-white rounded-full'}`}>CONTACTO</button>

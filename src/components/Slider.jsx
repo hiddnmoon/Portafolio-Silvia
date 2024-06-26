@@ -2,7 +2,7 @@
   import { Transition } from '@headlessui/react';
   import EfectoEscritura from './EfectoEscritura';
   import Inicio from './Inicio';
-  import Tecnologias from './Tecnologias';
+  import Habilidades from './Habilidades';
   import Experiencia from './Experiencia';
   import Proyectos from './Proyectos';
   import Contacto from './Contacto';
@@ -50,7 +50,7 @@
     useEffect(() => {
       const titulos = {
         Inicio: 'Inicio',
-        Tecnologias: 'Tecnología',
+        Habilidades: 'Habilidades',
         ExperienciayFormacion: 'Experiencia y Formación',
         Proyectos: 'Proyectos',
         Contacto: 'Contacto',
@@ -100,10 +100,10 @@
                     INICIO
                   </button>
                   <button
-                    onClick={() => navegacion('Tecnologias')}
+                    onClick={() => navegacion('Habilidades')}
                     className={`py-5 px-6 pr-10 pl-10 focus:outline-none rounded-full ml-4 transition duration-300 ease-in-out ${seccionAnimacion === 'Tecnologias' ? 'text-black font-bold' : 'text-gray-400 font-bold'}`}
                   >
-                    TECNOLOGÍAS
+                    HABILIDADES
                   </button>
                   <button
                     onClick={() => navegacion('ExperienciayFormacion')}
@@ -183,11 +183,11 @@
                       <button
                         onClick={() => {
                           toggleMenu();
-                          navegacion('Tecnologias');
+                          navegacion('Habilidades');
                         }}
                         className="block text-black font-bold py-2 px-4 text-center w-full"
                       >
-                        TECNOLOGÍAS
+                        HABILIDADES
                       </button>
                       <button
                         onClick={() => {
@@ -215,7 +215,7 @@
                   </nav>
                   </Transition>
           <Inicio seccionAnimacion={seccionAnimacion} navegacion={navegacion} />
-          <Tecnologias seccionAnimacion={seccionAnimacion} />
+          <Habilidades seccionAnimacion={seccionAnimacion} />
           <Experiencia seccionAnimacion={seccionAnimacion} />
           <Proyectos seccionAnimacion={seccionAnimacion} navegacion={navegacion}/>
           <Proyecto1 seccionAnimacion={seccionAnimacion} />

@@ -1,7 +1,7 @@
 import { Transition } from '@headlessui/react';
 import React from 'react';
 import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
-import street2 from '../image/street2.jpg';
+import sunset2 from '../image/sunset2.jpg';
 
 function Experiencia({ seccionAnimacion }) {
   return (
@@ -19,7 +19,7 @@ function Experiencia({ seccionAnimacion }) {
           id="ExperienciayFormacion"
           className="h-screen flex flex-col items-center justify-center bg-gradient-to-b from-purple-800 to-pink-800 text-white"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${street2})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${sunset2})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -35,9 +35,10 @@ function Experiencia({ seccionAnimacion }) {
                 <div className="col-span-1"></div>
 
                 <div className="border-2 border-white bg-opacity-10 rounded-lg p-4 text-center">
-                  <h4 className="text-xl font-semibold">Diseñador Web</h4>
-                  <p className="mt-2">Tecninet / 2024</p>
-                  <p className="mt-2 text-sm">Creación de páginas web en WordPress, optimizando diseño responsive. Realicé consultas SQL en un entorno de bases de datos para mejorar la eficiencia del sistema.</p>
+                  <h4 className="text-xl font-semibold">Acomodadora de cine</h4>
+                  <p className="mt-2">Cines Aqualon / Huelva / abr. 2022 - jun. 2022</p>
+                  <p className="mt-2 text-sm">Gestión integral de taquilla y concesiones, logística y abastecimiento de alimentos, diseño y coordinación de la agenda de espectáculos y 
+                    mantenimiento de la higiene en las salas.</p>
                 </div>
               </div>
             </div>
@@ -50,8 +51,8 @@ function Experiencia({ seccionAnimacion }) {
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full">
                 <div className="border-2 border-white bg-opacity-10 rounded-lg p-4 text-center">
-                  <h4 className="text-xl font-semibold">Grado Superior en Desarrollo de Aplicaciones Web</h4>
-                  <p className="italic mt-2">IES San Sebastián, Huelva / 2024</p>
+                  <h4 className="text-xl font-semibold">Grado superior Realización de Proyectos Audiovisuales y Espectáculos</h4>
+                  <p className="italic mt-2">IES Pablo Neruda / Huelva / 2022</p>
                 </div>
 
                 <div className="border-2 border-white bg-opacity-10 rounded-lg p-4 sm:mt-0 text-center">
@@ -61,7 +62,7 @@ function Experiencia({ seccionAnimacion }) {
 
                 <div className="border-2 border-white bg-opacity-10 rounded-lg p-4 text-center">
                   <h4 className="text-xl font-semibold">Educación Secundaria Obligatoria</h4>
-                  <p className="italic mt-2">IES Estuaria, Huelva / 2018</p>
+                  <p className="italic mt-2">IES Fuentepiña / Huelva / 2018</p>
                 </div>
               </div>
             </div>
