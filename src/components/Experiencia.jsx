@@ -1,9 +1,24 @@
 import { Transition } from '@headlessui/react';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
 import sunset2 from '../image/sunset2.jpg';
 
 function Experiencia({ seccionAnimacion }) {
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <Transition
@@ -22,6 +37,7 @@ function Experiencia({ seccionAnimacion }) {
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${sunset2})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+            minHeight: isMobile ? '115vh' : '100vh',
           }}
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl w-full px-8">
