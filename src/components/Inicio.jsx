@@ -59,18 +59,19 @@ function Inicio({ seccionAnimacion, navegacion }) {
           <div className='flex flex-col md:flex-row '>
             <div className='flex-grow md:w-3/4 flex flex-col justify-center p-4'>
             <h2 className={`text-4xl font-base text-white ${isMobile ? 'text-center' : ''}`}>
-              ¡Hola, soy <span className='font-extrabold text-white'>Carmelo Rodríguez</span>!
+              ¡Hola, soy <span className='font-extrabold text-white'>Silvia Garrido</span>!
             </h2>
-            <h2 className={`text-3xl font-bold text-white mt-2 ${isMobile ? 'text-center' : ''}`}>
-              Frontend Developer
+            <h2 className={`text-4xl font-bold text-white mt-2 ${isMobile ? 'text-center' : ''}`}>
+            Técnico de relación de Proyectos Audiovisuales 
+            y Espectáculos
             </h2>
-              <p className='text-white mt-3 text-justify max-w-3xl'>
-                Desde temprana edad, descubrí mi pasión por el arte y la creatividad. Esta inclinación artística me ha
-                acompañado a lo largo de los años y la he canalizado hacia el diseño web, fusionando estética y funcionalidad
-                en cada proyecto. Mi formación en Desarrollo de Aplicaciones Web, complementada con un fuerte enfoque en
-                diseño, me permite crear experiencias digitales que no solo son visualmente atractivas, sino también intuitivas
-                y eficientes. Nacido en Huelva, España, mi objetivo es aprovechar mi creatividad innata para desarrollar soluciones
-                web innovadoras y de alta calidad.
+              <p className='text-white mt-3 text-justify max-w-4xl'>
+              Desde temprana edad, mi pasión por el arte y la creatividad ha sido una constante en mi vida, impulsándome hacia la realización de proyectos 
+              audiovisuales y espectáculos. Mi formación integral en cine, televisión, teatro y edición ha sido clave para desarrollar un amplio espectro 
+              de habilidades técnicas y creativas. Nacida en Huelva, España, siempre he buscado integrar estética y narrativa en mis obras, creando experiencias
+               audiovisuales visualmente impactantes y profundamente envolventes. Mi objetivo es aplicar mi creatividad y conocimientos para producir obras innovadoras
+                y de alta calidad, mientras busco nuevas oportunidades y desafíos para seguir creciendo profesionalmente y aportando valor a cada proyecto en el que participe, 
+                sin importar el campo específico.
               </p>
               <div className='flex justify-center md:justify-start'>
               <a href="https://github.com/crodros2601" target="_blank"><img src={gitHub} className={`${isMobile ? 'w-14' : 'w-16'}`} alt="Icono de GitHub" />
