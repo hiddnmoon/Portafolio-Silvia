@@ -4,7 +4,7 @@ import { Transition } from '@headlessui/react';
 function EfectoEscritura() {
   const [escribir, setEscribir] = useState('');
   const [mostrarTexto, setMostrarTexto] = useState(true);
-  const nombre = "Carmelo Rodríguez | Portafolio";
+  const nombre = "Silvia Garrido | Portafolio";
 
   useEffect(() => {
     let intervalo;
