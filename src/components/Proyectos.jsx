@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import sunset4 from '../image/sunset4.jpg';
 import { Transition } from '@headlessui/react';
-import ensembleElegance from '../image/ensembleelegance.png';
-import inicio from '../image/inicio.png';
 import simbolo from '../image/simbolo.webp';
 import siya from '../image/siya.webp';
 

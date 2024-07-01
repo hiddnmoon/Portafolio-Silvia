@@ -2,17 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Transition } from '@headlessui/react';
 import sunset from '../image/sunset.jpg';
 import yo from '../image/yo.webp';
-import gitHub from '../image/gitHub.png';
-import linkedin from '../image/linkedin.png';
-import instagram from '../image/instagram.png';
 
 function Inicio({ seccionAnimacion, navegacion }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   const descargarCV = () => {
     const link = document.createElement('a');
-    link.href = process.env.PUBLIC_URL + '/CV-CarmeloRodriguez.pdf';
-    link.download = 'CV-CarmeloRodriguez.pdf';
+    link.href = process.env.PUBLIC_URL + '/CV-SilviaGarrido.pdf';
+    link.download = 'CV-SilviaGarrido.pdf';
     link.click();
   };
 
