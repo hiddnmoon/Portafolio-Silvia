@@ -57,14 +57,14 @@ function Inicio({ seccionAnimacion, navegacion }) {
               ¡Hola, soy <span className='font-extrabold text-white'>Silvia Garrido</span>!
             </h2>
             <h2 className={`text-2xl font-bold text-white mt-2 ${isMobile ? 'text-center' : ''}`}>
-            Técnico de relación de Proyectos Audiovisuales 
+            Técnico de realización de Proyectos Audiovisuales 
             y Espectáculos
             </h2>
               <p className='text-white mt-3 text-justify max-w-4xl'>
-              Desde temprana edad, mi pasión por el arte y la creatividad ha sido una constante en mi vida, impulsándome hacia la realización de proyectos 
-              audiovisuales y espectáculos. Mi formación integral en cine, televisión, teatro y edición ha sido clave para desarrollar un amplio espectro 
-              de habilidades técnicas y creativas. Nacida en Huelva, España, siempre he buscado integrar estética y narrativa en mis obras, creando experiencias
-               audiovisuales visualmente impactantes y profundamente envolventes. Mi objetivo es aplicar mi creatividad y conocimientos para producir obras innovadoras
+                Desde temprana edad, mi pasión por el arte y la creatividad ha sido una constante en mi vida, impulsándome hacia la realización de proyectos 
+                audiovisuales y espectáculos. Mi formación integral en cine, televisión, teatro y edición ha sido clave para desarrollar un amplio espectro 
+                de habilidades técnicas y creativas. Nacida en Huelva, España, siempre he buscado integrar estética y narrativa en mis obras, creando experiencias
+                audiovisuales visualmente impactantes y profundamente envolventes. Mi objetivo es aplicar mi creatividad y conocimientos para producir obras innovadoras
                 y de alta calidad, mientras busco nuevas oportunidades y desafíos para seguir creciendo profesionalmente y aportando valor a cada proyecto en el que participe, 
                 sin importar el campo específico.
               </p>

@@ -107,7 +107,7 @@ function Habilidades({ seccionAnimacion }) {
                 </div>
                 <div className="flex items-start space-x-4 my-4">
                   <img src={guionista} alt="Writer Icon" className="w-8 h-8 md:w-10 md:h-10 filter invert brightness-200 md:mt-2" />
-                  <p className="text-sm md:text-base">Escritura de guiones originales, desarrollo de tramas y personajes, y creación de diálogos coherentes y atractivos para diversos formatos audiovisuales.</p>
+                  <p className="text-sm md:text-base">Escritura de guiones, desarrollo de tramas y personajes, y creación de diálogos coherentes y atractivos para diversos formatos audiovisuales.</p>
                 </div>
                 <div className="flex items-start space-x-4 my-4">
                   <img src={script} alt="Continuity Icon" className="w-8 h-8 md:w-10 md:h-10 filter invert brightness-200 md:mt-2" />
