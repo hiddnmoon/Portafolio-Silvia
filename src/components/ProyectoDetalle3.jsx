@@ -78,6 +78,8 @@ function ProyectoDetalle3({ seccionAnimacion }) {
               <iframe title="video" width="100%" height="315" src="https://www.youtube.com/embed/EQzOvoxxKWg" frameBorder="0" allowFullScreen></iframe>
             </div>
 
+            <br />
+
           </div>
         </div>
       </Transition>
