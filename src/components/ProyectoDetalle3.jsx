@@ -44,7 +44,7 @@ function ProyectoDetalle3({ seccionAnimacion }) {
           <div className="max-w-4xl px-6 py-12 mt-14">
             <div className='text-center'>
               <h2 className="text-3xl font-semibold mb-4 md:inline-block md:border-b-4">
-                SI YA
+                SPOT
               </h2>
             </div>
             

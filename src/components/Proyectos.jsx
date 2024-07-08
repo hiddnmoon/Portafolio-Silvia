@@ -74,7 +74,7 @@ const Proyectos = ({ seccionAnimacion, navegacion }) => {
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(${sunset4})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          minHeight: isMobile ? '150vh' : '100vh'
+          minHeight: isMobile ? '175vh' : '100vh'
         }}
       >
         <div className={`grid gap-4 sm:gap-8 ${gridColumns}`}>
