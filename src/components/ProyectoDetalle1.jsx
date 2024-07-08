@@ -102,6 +102,8 @@ function ProyectoDetalle1({ seccionAnimacion }) {
               </li>
             </ul>
             
+            <br></br>
+
             <p className="text-lg text-gray-200">
             <span className='font-bold'>Conclusión:</span> Este cortometraje no solo se enfoca en una narrativa poderosa y relevante, 
               sino que también muestra un alto nivel de colaboración y creatividad del equipo. Cada miembro contribuyó de manera 
