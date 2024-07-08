@@ -3,6 +3,7 @@ import sunset4 from '../image/sunset4.jpg';
 import { Transition } from '@headlessui/react';
 import simbolo from '../image/simbolo.webp';
 import siya from '../image/siya.webp';
+import spot from '../image/spot.jpg';
 
 const proyectos = [
   {
@@ -16,6 +17,12 @@ const proyectos = [
     imagen: siya,
     nombre: 'Si ya',
     descripcion: 'Videoclip musical como parte de mi trabajo de fin de grado.',
+  },
+  {
+    id: 3,
+    imagen: spot,
+    nombre: 'Spot',
+    descripcion: 'Colaboraciones como operadora de cámara',
   },
 ];
 
@@ -92,6 +99,14 @@ const Proyectos = ({ seccionAnimacion, navegacion }) => {
                 {index === 1 && (
                   <button
                     onClick={() => navegacion('Proyecto2')}
+                    className="bg-black text-white px-4 py-2 rounded-md mt-3 sm:mt-0 mx-auto"
+                  >
+                    Ver más detalles
+                  </button>
+                )}
+                {index === 2 && (
+                  <button
+                    onClick={() => navegacion('Proyecto3')}
                     className="bg-black text-white px-4 py-2 rounded-md mt-3 sm:mt-0 mx-auto"
                   >
                     Ver más detalles

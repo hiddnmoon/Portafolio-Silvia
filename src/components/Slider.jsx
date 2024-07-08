@@ -8,6 +8,7 @@
   import Contacto from './Contacto';
   import Proyecto1 from './ProyectoDetalle1';
   import Proyecto2 from './ProyectoDetalle2';
+  import Proyecto3 from './ProyectoDetalle3';
 
   function Slider() {
     const [seccionAnimacion, setSeccionAnimacion] = useState('Inicio');
@@ -220,6 +221,7 @@
           <Proyectos seccionAnimacion={seccionAnimacion} navegacion={navegacion}/>
           <Proyecto1 seccionAnimacion={seccionAnimacion} />
           <Proyecto2 seccionAnimacion={seccionAnimacion} />
+          <Proyecto3 seccionAnimacion={seccionAnimacion} />
           <Contacto seccionAnimacion={seccionAnimacion} />
         </div>
       </>
